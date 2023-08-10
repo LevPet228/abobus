@@ -1,0 +1,140 @@
+.box {
+    width: 600px;height: 400px;border: 3px solid #000;
+    margin: 100px auto  ;
+    position: relative;
+    border-radius: 40px;
+}
+.box__inside {
+    width: 100%;
+    height: 33%;
+    background-color: aquamarine;
+    position: absolute;
+    right: 0;
+    top: 33%;
+    border-radius: 40px;
+    animation: yalox 2s cubic-bezier(0.455, 0.33, 0.515, 0.955) infinite;
+    animation-delay: 1s;
+    
+}
+@keyframes yalox{
+    0%{
+        transform: translateY(-137px);
+    }
+    100%{
+        transform: translateY(137px);
+        background: fuchsia;
+    }
+}
+.message{
+    width: 90px;
+    height: 90px;
+    border-radius:  50px;
+    background: linear-gradient(rgb(241, 6, 6), rgb(255, 88, 88));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    overflow: hidden;
+    transition: 0.6s;
+    
+}
+.message:hover{
+    width: 460px;
+}
+.message__icon {
+    transform: scale(2.5);
+    padding-left: 21px;
+}
+.audio-player {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-color: rgb(0, 179, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    left: 40px;
+    bottom: 100px;
+    transition: 0.6s;
+}
+.audio-player:hover{
+    width: 450px;
+}
+.audio-player-icon {
+    font-size: 35px;
+    padding-left: 34px;
+    margin-right: 30px;
+}
+.audio {
+    padding-right: 20px;
+}
+.telegramm {
+    padding-left: 30px;
+}
+.A-tel {
+    font-size: 24px;
+    color: black;
+    padding-right: 70px;
+    margin-left: 30px;
+}
+.header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aquamarine;
+    border-radius: 50px;
+}
+.header__logo {
+    border: 2px solid #000;
+    width: 150px;
+    height: 60px;
+    margin-left: 70px;
+    display: flex;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Borel', cursive;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.header_navigation {
+    height: 80px;
+    width: 1100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+}
+.navigation-block {
+    width: 200px;
+    font-family: 'Borel', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 17px;
+    height: 30px;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    background: rgb(8, 146, 100);
+    overflow: hidden;
+    transition: 0.7s;
+}
+.navigation-block:hover{
+    height: 100px;
+    margin-top: 120px;
+    padding-bottom: 80px;
+}
